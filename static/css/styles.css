@@ -6,15 +6,25 @@
 /* this is a tag selector */
 body {
   header {
-    background-color: rgb(148, 99, 99);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3px;
+    background-color: rgb(79, 16, 16);
     h1 {
       color: rgb(145, 219, 219);
-      display: inline;
+
+      text-shadow: 5px 5px 2px rgb(39, 25, 25);
     }
     nav {
-      display: inline;
+ 
       a {
         color: azure;
+        text-decoration: none;
+        text-shadow:1px 1px 1px rgb(172, 101, 8) ;
+      }
+      a:hover{
+        display: none;
       }
     }
   }
@@ -22,12 +32,13 @@ body {
 main {
   section {
     width: 80%;
-    background-color: rgb(141, 99, 99);
+    background-color: rgb(240, 231, 231);
     margin: auto;
     margin-top: 10px;
     display: flex;
   }
   section#intro {
+    display: flex;
     figure {
       width: 50%;
       height: 200px;
@@ -40,10 +51,23 @@ main {
     }
     figcaption {
       color: rgb(5, 1, 1);
+      padding: 1px;
     }
-    div{
-        width: 40%;
+    div#intro-quote{
+        width: 50%;
         padding: 5px;
+        border: 1px solid;
+        flex: content;
+        flex-direction: column;
+        
     }
   }
+}
+.shadow{
+  box-shadow: 1px 1px 3px gray 
+  ;
+}
+.rounded-edge{
+  border-radius: 5px;
+  overflow: hidden;
 }
